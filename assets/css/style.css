@@ -42,6 +42,17 @@ ol {
     width: 210px;
     height: 52px;
 }
+.button_secondary{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 62px;
+padding: 16px 54px;
+width: 218px;
+height: 52px;
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+color: #000;
+}
 
 /* top bar */
 #top_bar .bg_top {

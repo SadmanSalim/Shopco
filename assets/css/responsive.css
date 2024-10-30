@@ -103,4 +103,12 @@
     .swiper-button-next{
         top: 100px;
     }
+    /* top sell */
+    #top_selling{
+        margin-top: -30px;
+    }
+    .swiper-slide{
+        width: 295px;
+        height: 360px;
+    }
 }
