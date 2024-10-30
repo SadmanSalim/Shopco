@@ -111,4 +111,20 @@
         width: 295px;
         height: 360px;
     }
+    /* gallery */
+    .first_img{
+        position: static;
+    }
+    .second_img{
+        position: static;
+        margin: 16px 0;
+    }
+    .third_img{
+        position: static;
+    }
+    .fourth_img{
+        position: static;
+        margin: 16px 0;
+
+    }
 }
