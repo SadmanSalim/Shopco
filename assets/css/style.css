@@ -170,3 +170,97 @@ nav input {
 #brands img{
     margin-top: 44px;
 }
+/* new arrival */
+#new_arrival h3{
+    font-family: var(--second-family);
+font-weight: 800;
+font-size: 48px;
+text-align: center;
+color: #000;
+text-transform: uppercase;
+margin-top: 72px;
+margin-bottom: 55px;
+}
+/* button start */
+.swiper-button-next::after,
+.swiper-button-prev::after{
+  content: '';
+}
+.swiper-button-next,
+.swiper-button-prev{
+  background-color: #000000;
+  border: 0.0625rem solid var(--border-color);
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 0.3125rem;
+  color: #ffffff;
+  font-size: 0.9375rem;
+}
+
+.swiper-button-prev{
+  left: initial;
+  right: 2.5rem;
+}
+
+.swiper-button-next{
+  right: 1rem;
+  top: 150px;
+}
+.swiper-button-prev{
+    left: 0.5rem;
+    top: 150px;
+}
+/* button end */
+/* !swipper */
+.swiper-slide{
+    width: 295px;
+    height: 408px;
+}
+#new_arrival .details h4{
+    font-family: var(--font-family);
+font-weight: 700;
+font-size: 16px;
+color: #000;
+margin-top: 16px;
+}
+#new_arrival .ratings i{
+    color: #ffc633;
+}
+#new_arrival .ratings span{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+color: #000;
+margin: 8px 0;
+}
+#new_arrival .details p{
+    font-family: var(--font-family);
+font-weight: 700;
+font-size: 24px;
+color: #000;
+}
+#new_arrival .details p span{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.4);
+}
+#new_arrival .discount{
+border-radius: 62px;
+padding: 6px 14px;
+width: 58px;
+height: 28px;
+margin-left: 10px;
+margin-top: 5px;
+background: rgba(255, 51, 51, 0.1);
+}
+
+#new_arrival .discount span{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 12px;
+color: #f33;
+align-items: center;
+display: flex;
+}
