@@ -23,3 +23,28 @@ var swiper = new Swiper(".mySwiper", {
         },
       },
   });
+var swiper = new Swiper("#client_review .mySwiper", {
+    spaceBetween: 24,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    breakpoints: {
+        300: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        576: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1400: {
+          slidesPerView: 3,
+          spaceBetween: 24,
+        },
+      },
+  });

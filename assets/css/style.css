@@ -320,3 +320,127 @@ padding: 70px 0 64px;
     color: #000;
     margin: 80px 0 40px;
 }
+#client_review .ratings i{
+    color: #ffc633;
+}
+#client_review .swiper-slide{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 28px 32px;
+    width: 400px;
+    height: 240px;
+}
+.reviewer_name{
+    margin: 15px 0 12px;
+}
+#client_review span{
+    font-family: var(--font-family);
+font-weight: 700;
+font-size: 20px;
+line-height: 110%;
+color: #000;
+}
+.fa-certificate{
+    color: #01AB31;
+    margin-left: 5px;
+}
+#client_review p{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 137%;
+color: rgba(0, 0, 0, 0.6);
+}
+
+/* details */
+.details_cnt{
+    border-radius: 20px;
+padding: 36px 64px;
+width: 1240px;
+height: 180px;
+background: #000;
+margin: 80px auto 0;
+z-index: 100;
+transform: translateY(40%);
+}
+#stay_up .col-lg-7 h2{
+    font-family: var(--second-family);
+font-weight: 900;
+font-size: 45px;
+line-height: 112%;
+color: #fff;
+}
+#stay_up .email_box input{
+    border-radius: 62px;
+padding: 12px 16px;
+width: 349px;
+height: 48px;
+background: #fff;
+border: none;
+outline: none;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+color: rgba(0, 0, 0, 0.4);
+padding-left: 52px;
+}
+.email_box{
+    position: relative;
+}
+.fa-envelope{
+    position: absolute;
+    left: 16px;
+    top: 12px;
+    font-size: 24px;
+}
+.button{
+    border-radius: 62px;
+padding: 12px 16px;
+width: 349px;
+height: 46px;
+background: #fff;
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+color: #000;
+justify-content: center;
+margin-top: 14px;
+align-items: center;
+display: flex;
+}
+
+/* footer */
+footer .bg_cont{
+    background: #f0f0f0;
+    height: 499px;
+}
+.footer_cnt{
+    padding-top: 140px;
+}
+footer .col p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 25px 0 35px;
+}
+footer .icons_bg{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0 6px;
+}
+footer .icons_bg a i{
+    display: flex;
+    justify-content: center;
+    line-height: 28px;
+    font-size: 12px;
+    color: #000;
+}
+footer .icons_bg:hover,
+footer .icons_bg a i:hover{
+    background: #000;
+    color: #fff;
+}

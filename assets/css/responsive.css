@@ -78,53 +78,144 @@
     }
 
     /* brands */
-    #brands .bg_cont{
+    #brands .bg_cont {
         background: #000;
         height: 146px;
     }
-    #brands img{
+
+    #brands img {
         margin-top: 40px;
     }
+
     /* new arrival */
-    #new_arrival h3{
-    margin-top: 50px;
-    margin-bottom: 32px;
+    #new_arrival h3 {
+        margin-top: 50px;
+        margin-bottom: 32px;
     }
-    #new_arrival .details p{
-    font-size: 18px;
-    margin-top: 5px;
+
+    #new_arrival .details p {
+        font-size: 18px;
+        margin-top: 5px;
     }
-    #new_arrival .details p span{
+
+    #new_arrival .details p span {
         font-size: 18px;
     }
-    .swiper-button-prev{
+
+    .swiper-button-prev {
         top: 100px;
     }
-    .swiper-button-next{
+
+    .swiper-button-next {
         top: 100px;
     }
+
     /* top sell */
-    #top_selling{
+    #top_selling {
         margin-top: -30px;
     }
-    .swiper-slide{
+
+    .swiper-slide {
         width: 295px;
         height: 360px;
     }
+
     /* gallery */
-    .first_img{
+    .first_img {
         position: static;
     }
-    .second_img{
+
+    .second_img {
         position: static;
         margin: 16px 0;
     }
-    .third_img{
+
+    .third_img {
         position: static;
     }
-    .fourth_img{
+
+    .fourth_img {
         position: static;
         margin: 16px 0;
 
     }
+
+    #gallery .bg_cont {
+        height: 1250px;
+    }
+
+    /* review */
+    #client_review h3 {
+        font-size: 39px;
+        margin: 40px 0 40px;
+    }
+
+    #client_review .swiper-button-next {
+        right: 1rem;
+        top: 150px;
+    }
+
+    #client_review .swiper-button-prev {
+        left: 0.5rem;
+        top: 150px;
+    }
+
+    /* details */
+    .details_cnt {
+        border-radius: 20px;
+        width: 358px;
+        height: 293px;
+        background: #000;
+        margin: auto;
+        transform: translateY(40%);
+    }
+
+    #stay_up .col-lg-7 h2 {
+        font-size: 25px;
+    }
+
+    #stay_up .email_box input {
+        border-radius: 62px;
+        padding: 12px 16px;
+        width: 311px;
+        height: 42px;
+        background: #fff;
+        border: none;
+        outline: none;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.4);
+        padding-left: 48px;
+        margin-left: -45px;
+        margin-top: 10px;
+    }
+    .fa-envelope{
+        position: absolute;
+        left: -25px;
+        top: 20px;
+        font-size: 20px;
+    }
+    .button{
+        border-radius: 62px;
+        padding: 12px 16px;
+        width: 311px;
+        height: 42px;
+    background: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+    margin-left: -45px;
+    margin-top: 14px;
+    }
+    /* footer */
+    footer .bg_cont{
+        height: 846px;
+    }
+    footer .col p{
+        margin: 14px 0 20px;
+    }
+
 }
