@@ -221,6 +221,9 @@
     footer .col p {
         margin: 14px 0 20px;
     }
+    footer .line_bottom{
+        width: 100%;
+    }
 
     /* cart page */
     #products .products .col-lg-7 {
