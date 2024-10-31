@@ -190,32 +190,130 @@
         margin-left: -45px;
         margin-top: 10px;
     }
-    .fa-envelope{
+
+    .fa-envelope {
         position: absolute;
         left: -25px;
         top: 20px;
         font-size: 20px;
     }
-    .button{
+
+    .button {
         border-radius: 62px;
         padding: 12px 16px;
         width: 311px;
         height: 42px;
-    background: #fff;
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 14px;
-    color: #000;
-    text-align: center;
-    margin-left: -45px;
-    margin-top: 14px;
+        background: #fff;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 14px;
+        color: #000;
+        text-align: center;
+        margin-left: -45px;
+        margin-top: 14px;
     }
+
     /* footer */
-    footer .bg_cont{
+    footer .bg_cont {
         height: 100%;
     }
-    footer .col p{
+
+    footer .col p {
         margin: 14px 0 20px;
+    }
+
+    /* cart page */
+    #products .products .col-lg-7 {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        padding: 14px;
+        width: 358px;
+        height: 420px;
+        margin: auto;
+    }
+
+    #products .details h5 {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 16px;
+        color: #000;
+    }
+
+    #products .details p {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 12px;
+        color: #000;
+        margin: 0;
+    }
+
+    #products .details h4 {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 20px;
+        color: #000;
+    }
+
+    #products .quantity {
+        border-radius: 62px;
+        padding: 14px 20px;
+        width: 105px;
+        height: 31px;
+        margin-left: -30px;
+        margin-top: 50px;
+    }
+
+    #products .lines {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        width: 330px;
+        height: 0px;
+        margin: 16px 0;
+    }
+
+    #products .order_cnt {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        padding: 20px;
+        width: 358px;
+        height: 390px;
+        margin: 20px auto;
+    }
+
+    #products .order_line {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        width: 318px;
+        height: 0px;
+        margin: 10px 0 20px;
+    }
+
+    .cupon_box input {
+        border-radius: 62px;
+        padding: 12px 16px;
+        width: 218px;
+        height: 48px;
+    }
+
+    .cupon_box a {
+        border-radius: 62px;
+        padding: 12px 16px;
+        width: 88px;
+        height: 48px;
+    }
+
+    .checkout a {
+        border-radius: 62px;
+        padding: 16px 54px;
+        width: 318px;
+        height: 54px;
+        background: #000;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        color: #fff;
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+        margin: 24px 0;
     }
 
 }
