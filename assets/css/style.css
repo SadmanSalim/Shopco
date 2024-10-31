@@ -417,7 +417,7 @@ footer .bg_cont{
 .footer_cnt{
     padding-top: 140px;
 }
-footer .col p{
+footer .col-12 p{
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
@@ -425,22 +425,57 @@ footer .col p{
     color: rgba(0, 0, 0, 0.6);
     margin: 25px 0 35px;
 }
-footer .icons_bg{
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    background: #fff;
-    margin: 0 6px;
-}
-footer .icons_bg a i{
+footer .icons_bg a i {
     display: flex;
     justify-content: center;
-    line-height: 28px;
-    font-size: 12px;
+    line-height: 31px;
+    font-size: 16px;
     color: #000;
-}
-footer .icons_bg:hover,
-footer .icons_bg a i:hover{
-    background: #000;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  footer .icons_bg a i:hover {
+    background-color: #000;
     color: #fff;
+  }
+footer h4{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 112%;
+letter-spacing: 0.19em;
+text-transform: uppercase;
+color: #000;
+margin-bottom: 20px;
+}
+footer li {
+    margin-bottom: 10px;
+}
+footer li a{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 119%;
+color: rgba(0, 0, 0, 0.6);
+}
+footer li a:hover{
+    text-decoration: underline;
+}
+footer .line_bottom{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+width: 1240px;
+height: 0px;
+margin: 50px 0 0 0;
+}
+footer .copyright p{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+color: rgba(0, 0, 0, 0.6);
+margin-top: 25px;
+}
+footer .payments{
+    margin-top: 20px;
 }
