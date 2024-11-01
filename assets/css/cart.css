@@ -1,0 +1,305 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+:root {
+  --font-family: 'Montserrat', sans-serif;
+  --second-family: 'Poppins', sans-serif;
+}
+
+.button_primary {
+  border-radius: 62px;
+  padding: 16px 54px;
+  background: #000;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  width: 210px;
+  height: 52px;
+}
+.button_secondary {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 62px;
+  padding: 16px 54px;
+  width: 218px;
+  height: 52px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+
+/* *=================HEADER STERT HARE======================  */
+/* top bar */
+#top_bar .bg_top {
+  background: #000;
+  height: 38px;
+}
+
+#top_bar span {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  margin-top: 9px;
+  display: inline-block;
+}
+
+#top_bar span a {
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fff;
+}
+
+/* nav  bar */
+/* .nav-item ul li{
+    padding: 0 22px;
+} */
+.nav-item a {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  padding: 0 22px;
+}
+
+nav input {
+  border-radius: 62px;
+  padding: 12px 16px;
+  width: 577px;
+  height: 48px;
+  border: none;
+  outline: none;
+  background: #f0f0f0;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.4);
+  padding-left: 50px;
+}
+
+.search_box {
+  position: relative;
+}
+
+.search_box .fa-magnifying-glass {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.action_btns a {
+  font-size: 20px;
+  margin: 0 7px;
+  color: #000;
+}
+
+/* *==================HEADER END HARE====================  */
+/**================CART STERT HARE================== */
+.product-option {
+  margin-top: 36px;
+}
+
+.option-image img,
+.main-image img {
+  margin: 7px;
+}
+
+.right-side h3 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 40px;
+  color: #000;
+  text-transform: uppercase;
+}
+.right-side span {
+  display: flex;
+  align-items: center;
+}
+.right-side span iconify-icon {
+  color: #ffc633;
+  font-size: 20px;
+}
+.reviw-point {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  margin: 10px 0;
+}
+.price {
+  margin-bottom: 10px;
+}
+.price span {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 32px;
+  color: #000;
+}
+.price span .sent-price {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.3);
+  margin: 0 12px;
+}
+.price .lavel {
+  border-radius: 62px;
+  padding: 6px 14px;
+  width: 72px;
+  height: 34px;
+  background: rgba(255, 51, 51, 0.1);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: #f33;
+}
+.right-side p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 137%;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
+}
+
+.s-color {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 16px 0 16px;
+}
+.color-option .color {
+  width: 37px;
+  height: 37px;
+  background: #4f4631;
+  margin: 0 16px 20px 0;
+  border-radius: 50%;
+}
+.color-option .color-1 {
+  background-color: #314f4a;
+}
+.color-option .color-2 {
+  background-color: #31344f;
+}
+.t-size {
+  width: 100%;
+}
+.t-size span {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.t-size a {
+  padding: 12px 24px;
+  background: #f0f0f0;
+  border-radius: 62px;
+  display: inline-block;
+  margin: 16px 6px 24px 6px;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.t-size .comen-size {
+  background: #000;
+  color: #fff;
+}
+.btn {
+  margin-top: 10px;
+  width: 100%;
+}
+.btn .quintet {
+  border-radius: 62px;
+  padding: 16px 82px;
+  background: #f0f0f0;
+  margin-right: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+.btn .cart-btn {
+  border-radius: 62px;
+  padding: 10px 90px;
+  background: #000;
+  line-height: 36px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+}
+.reviw {
+  margin-top: 70px;
+}
+
+.reviw a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 110%;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 24px;
+  display: inline-block;
+}
+.r-active a {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 110%;
+  text-align: center;
+  color: #000;
+}
+.r-active {
+  border-bottom: 2px solid #000;
+}
+/* *=============CART END HARE===============  */
+@media (max-width: 991px) {
+  .right-side h3 {
+    margin-top: 24px;
+  }
+  .t-size a {
+    padding: 10px 20px;
+    margin: 16px 0px 24px 6px;
+  }
+  .btn .quintet {
+    padding: 16px 70px;
+  }
+  .btn .cart-btn {
+    padding: 10px 0px;
+  }
+  .p-img-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .p-img-box img {
+    width: 110px;
+  }
+
+  .reviw a {
+    font-size: 13px;
+  }
+}
