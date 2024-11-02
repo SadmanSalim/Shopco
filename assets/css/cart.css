@@ -227,7 +227,8 @@ nav input {
     display: inline-block;
 }
 
-#products .order_cnt .row p {
+#products .order_cnt .row p, 
+#products .order_cnt .row p span{
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 20px;
@@ -236,7 +237,8 @@ nav input {
     margin: 12px 0;
 }
 
-#products .order_cnt .row .discount p {
+#products .order_cnt .row .discount p, 
+#products .order_cnt .row .discount p span{
     color: #f33;
 }
 
@@ -426,4 +428,17 @@ margin-top: 25px;
 }
 footer .payments{
     margin-top: 20px;
+}
+button{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.quantity input{
+    width: 40px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background: transparent;
+    align-items: center;
 }

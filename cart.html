@@ -99,14 +99,18 @@
                                                 <h5>Gradient Graphic T-shirt</h5>
                                                 <p>Size: <span>Large</span></p>
                                                 <p>Color: <span>White</span></p>
-                                                <h4>$145</h4>
+                                                <h4>$<span id="itemval">0.00</span></h4>
                                             </div>
                                             <div class="col-4 text-end">
                                                 <iconify-icon class="dust_bin" icon="ri:delete-bin-fill"></iconify-icon>
                                                 <div class="quantity">
-                                                    <iconify-icon icon="ic:baseline-minus"></iconify-icon>
-                                                    <span>1</span>
-                                                    <iconify-icon icon="ic:round-plus"></iconify-icon>
+                                                    <button onclick="decreaseNumber('textbox', 'itemval')">
+                                                        <iconify-icon icon="ic:baseline-minus"></iconify-icon>
+                                                    </button>
+                                                    <input type="text" value="0" id="textbox" name="">
+                                                    <button onclick="increaseNumber('textbox', 'itemval')">
+                                                        <iconify-icon icon="ic:round-plus"></iconify-icon>
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -121,14 +125,18 @@
                                                 <h5>Gradient Graphic T-shirt</h5>
                                                 <p>Size: <span>Large</span></p>
                                                 <p>Color: <span>White</span></p>
-                                                <h4>$145</h4>
+                                                <h4>$<span id="itemval1">0.00</span></h4>
                                             </div>
                                             <div class="col-4 text-end">
                                                 <iconify-icon class="dust_bin" icon="ri:delete-bin-fill"></iconify-icon>
                                                 <div class="quantity">
-                                                    <iconify-icon icon="ic:baseline-minus"></iconify-icon>
-                                                    <span>1</span>
-                                                    <iconify-icon icon="ic:round-plus"></iconify-icon>
+                                                    <button onclick="decreaseNumber('textbox1', 'itemval1')">
+                                                        <iconify-icon icon="ic:baseline-minus"></iconify-icon>
+                                                    </button>
+                                                    <input type="text" value="0" id="textbox1" name="">
+                                                    <button onclick="increaseNumber('textbox1', 'itemval1')">
+                                                        <iconify-icon icon="ic:round-plus"></iconify-icon>
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -143,14 +151,18 @@
                                                 <h5>Gradient Graphic T-shirt</h5>
                                                 <p>Size: <span>Large</span></p>
                                                 <p>Color: <span>White</span></p>
-                                                <h4>$145</h4>
+                                                <h4>$<span id="itemval2">0.00</span></h4>
                                             </div>
                                             <div class="col-4 text-end">
                                                 <iconify-icon class="dust_bin" icon="ri:delete-bin-fill"></iconify-icon>
                                                 <div class="quantity">
-                                                    <iconify-icon icon="ic:baseline-minus"></iconify-icon>
-                                                    <span>1</span>
-                                                    <iconify-icon icon="ic:round-plus"></iconify-icon>
+                                                    <button onclick="decreaseNumber('textbox2', 'itemval2')">
+                                                        <iconify-icon icon="ic:baseline-minus"></iconify-icon>
+                                                    </button>
+                                                    <input type="text" value="0" id="textbox2" name="">
+                                                    <button onclick="increaseNumber('textbox2',  'itemval2')">
+                                                        <iconify-icon icon="ic:round-plus"></iconify-icon>
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -166,7 +178,7 @@
                                         <span>Sub Total</span>
                                     </div>
                                     <div class="col-6 text-end">
-                                        <p>$565</p>
+                                        <p>$<span id="product_total_amt">0.00</span></p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -174,7 +186,7 @@
                                         <span>Discount (-20%)</span>
                                     </div>
                                     <div class="col-6 text-end discount">
-                                        <p>-$113</p>
+                                        <p>-$<span>0.00</span></p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -182,7 +194,7 @@
                                         <span>Delivery Fee</span>
                                     </div>
                                     <div class="col-6 text-end">
-                                        <p>$15</p>
+                                        <p id="shipping_charge">$50</p>
                                     </div>
                                 </div>
                                 <div class="order_line"></div>
@@ -191,13 +203,14 @@
                                         <span>Total</span>
                                     </div>
                                     <div class="col-6 text-end">
-                                        <p>$467</p>
+                                        <p>$<span id="total_cart_amt">0.00</span></p>
                                     </div>
                                 </div>
                                 <div class="cupon_box">
                                     <div class="row">
-                                        <input class="col-8" type="text" placeholder="Add promo code">
-                                        <a class="col-4" href="#">Apply</a>
+                                        <input class="col-8" name="" id="discount_code1" type="text"
+                                            placeholder="Add promo code">
+                                        <a class="col-4" onclick="discount_code()" type="button">Apply</a>
                                     </div>
                                 </div>
                                 <div class="checkout"><a href="#">Go to Checkout <iconify-icon
@@ -209,8 +222,8 @@
             </div>
         </section>
         <!-- * Section end -->
-          <!-- *stay upto date -->
-          <section id="stay_up">
+        <!-- *stay upto date -->
+        <section id="stay_up">
             <div class="container">
                 <div class="details_cnt">
                     <div class="row">
@@ -233,69 +246,132 @@
 
 
 
-<footer>
-    <div class="container-fluid bg_cont">
-        <div class="container">
-            <div class="footer_cnt">
-                <div class="row">
-                    <div class="col-12 col-lg">
-                        <img src="./assets/img/logo.png" alt="">
-                        <p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
-                        <div class="row">
-                            <div class="col-2 icons_bg"><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
-                            <div class="col-2 icons_bg"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></div>
-                            <div class="col-2 icons_bg"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
-                            <div class="col-2 icons_bg"><a href="#"><i class="fa-brands fa-github"></i></a></div>
+    <footer>
+        <div class="container-fluid bg_cont">
+            <div class="container">
+                <div class="footer_cnt">
+                    <div class="row">
+                        <div class="col-12 col-lg">
+                            <img src="./assets/img/logo.png" alt="">
+                            <p>We have clothes that suits your style and which you’re proud to wear. From women to men.
+                            </p>
+                            <div class="row">
+                                <div class="col-2 icons_bg"><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
+                                <div class="col-2 icons_bg"><a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                </div>
+                                <div class="col-2 icons_bg"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+                                <div class="col-2 icons_bg"><a href="#"><i class="fa-brands fa-github"></i></a></div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg mt-lg-0 mt-4 mb-4 mb-lg-0">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Works</a></li>
+                                <li><a href="#">Carrer</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-lg mt-4 mt-lg-0">
+                            <h4>Help</h4>
+                            <ul>
+                                <li><a href="#">Customer Support </a></li>
+                                <li><a href="#">Delivery Details</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-lg">
+                            <h4>FAQ</h4>
+                            <ul>
+                                <li><a href="#">Account</a></li>
+                                <li><a href="#">Manage Deliveries</a></li>
+                                <li><a href="#">Orders</a></li>
+                                <li><a href="#">Payments</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-lg">
+                            <h4>Resources</h4>
+                            <ul>
+                                <li><a href="#">Free eBooks</a></li>
+                                <li><a href="#">Development Tutorial</a></li>
+                                <li><a href="#">How to-Blog</a></li>
+                                <li><a href="#">Youtube Playlist</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-6 col-lg mt-lg-0 mt-4 mb-4 mb-lg-0">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Works</a></li>
-                            <li><a href="#">Carrer</a></li>
-                        </ul>
+                </div>
+                <div class="line_bottom"></div>
+                <div class="row">
+                    <div class="copyright col-lg-6 text-center text-lg-start">
+                        <p>Shop.co © 2000-2023, All Rights Reserved</p>
                     </div>
-                    <div class="col-6 col-lg mt-4 mt-lg-0"><h4>Help</h4>
-                        <ul>
-                            <li><a href="#">Customer Support </a></li>
-                            <li><a href="#">Delivery Details</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul></div>
-                    <div class="col-6 col-lg"><h4>FAQ</h4>
-                        <ul>
-                            <li><a href="#">Account</a></li>
-                            <li><a href="#">Manage Deliveries</a></li>
-                            <li><a href="#">Orders</a></li>
-                            <li><a href="#">Payments</a></li>
-                        </ul></div>
-                    <div class="col-6 col-lg"><h4>Resources</h4>
-                        <ul>
-                            <li><a href="#">Free eBooks</a></li>
-                            <li><a href="#">Development Tutorial</a></li>
-                            <li><a href="#">How to-Blog</a></li>
-                            <li><a href="#">Youtube Playlist</a></li>
-                        </ul></div>
-                </div>
-            </div>
-            <div class="line_bottom"></div>
-            <div class="row">
-                <div class="copyright col-lg-6 text-center text-lg-start">
-                    <p>Shop.co © 2000-2023, All Rights Reserved</p>
-                </div>
-                <div class="payments col-lg-6 text-end">
-                    <img src="./assets/img/visa.svg" alt="">
-                    <img src="./assets/img/mastercard.svg" alt="">
-                    <img src="./assets/img/paypal.svg" alt="">
-                    <img src="./assets/img/ipay.svg" alt="">
-                    <img src="./assets/img/gpay.svg" alt="">
+                    <div class="payments col-lg-6 text-end">
+                        <img src="./assets/img/visa.svg" alt="">
+                        <img src="./assets/img/mastercard.svg" alt="">
+                        <img src="./assets/img/paypal.svg" alt="">
+                        <img src="./assets/img/ipay.svg" alt="">
+                        <img src="./assets/img/gpay.svg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
+
+
+    <script>
+
+        var product_total_amt = document.getElementById('product_total_amt');
+        var shipping_charge = document.getElementById('shipping_charge');
+        var total_cart_amt = document.getElementById('total_cart_amt');
+        var discountCode = document.getElementById('discount_code1');
+        const decreaseNumber = (incdec, itemprice) => {
+            var itemval = document.getElementById(incdec);
+            var itemprice = document.getElementById(itemprice);
+            console.log(itemprice.innerHTML);
+            // console.log(itemval.value);
+            if (itemval.value <= 0) {
+                itemval.value = 0;
+                alert('Negative quantity not allowed');
+            } else {
+                itemval.value = parseInt(itemval.value) - 1;
+                itemval.style.background = 'transparent';
+                itemval.style.color = '#000';
+                itemprice.innerHTML = parseInt(itemprice.innerHTML) - 15;
+                product_total_amt.innerHTML = parseInt(product_total_amt.innerHTML) - 15;
+                total_cart_amt.innerHTML = parseInt(product_total_amt.innerHTML) + parseInt(shipping_charge.innerHTML);
+            }
+        }
+        const increaseNumber = (incdec, itemprice) => {
+            var itemval = document.getElementById(incdec);
+            var itemprice = document.getElementById(itemprice);
+            // console.log(itemval.value);
+            if (itemval.value >= 5) {
+                itemval.value = 5;
+                alert('max 5 allowed');
+                itemval.style.background = 'red';
+                itemval.style.color = '#fff';
+            } else {
+                itemval.value = parseInt(itemval.value) + 1;
+                itemprice.innerHTML = parseInt(itemprice.innerHTML) + 15;
+                product_total_amt.innerHTML = parseInt(product_total_amt.innerHTML) + 15;
+                total_cart_amt.innerHTML = parseInt(product_total_amt.innerHTML) + parseInt(shipping_charge.innerHTML);
+            }
+        }
+        const discount_code = () => {
+            let totalamtcurr = parseInt(total_cart_amt.innerHTML);
+            let error_trw = document.getElementById('error_trw');
+            if (discountCode.value === 'sadman15') {
+                let newtotalamt = totalamtcurr - 15;
+                total_cart_amt.innerHTML = newtotalamt;
+                error_trw.innerHTML = "Hurray! code is valid";
+            } else {
+                error_trw.innerHTML = "Try Again! Valid code is sadman15";
+            }
+        }
+
+
+    </script>
 </body>
 
 </html>
