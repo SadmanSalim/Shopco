@@ -104,13 +104,17 @@
                                             <div class="col-4 text-end">
                                                 <iconify-icon class="dust_bin" icon="ri:delete-bin-fill"></iconify-icon>
                                                 <div class="quantity">
-                                                    <button onclick="decreaseNumber('textbox', 'itemval')">
-                                                        <iconify-icon icon="ic:baseline-minus"></iconify-icon>
-                                                    </button>
+                                                    
+                                                        <a onclick="decreaseNumber('textbox', 'itemval')" type="button">
+                                                            <iconify-icon icon="ic:baseline-minus"></iconify-icon>
+                                                        </a>
+      
                                                     <input type="text" value="0" id="textbox" name="">
-                                                    <button onclick="increaseNumber('textbox', 'itemval')">
-                                                        <iconify-icon icon="ic:round-plus"></iconify-icon>
-                                                    </button>
+                                                    
+                                                        <a onclick="increaseNumber('textbox', 'itemval')" type="button">
+                                                            <iconify-icon icon="ic:round-plus"></iconify-icon>
+                                                        </a>
+      
                                                 </div>
                                             </div>
                                         </div>
@@ -130,13 +134,15 @@
                                             <div class="col-4 text-end">
                                                 <iconify-icon class="dust_bin" icon="ri:delete-bin-fill"></iconify-icon>
                                                 <div class="quantity">
-                                                    <button onclick="decreaseNumber('textbox1', 'itemval1')">
+                                                    <a onclick="decreaseNumber('textbox1', 'itemval1')" type="button">
                                                         <iconify-icon icon="ic:baseline-minus"></iconify-icon>
-                                                    </button>
+                                                    </a>
                                                     <input type="text" value="0" id="textbox1" name="">
-                                                    <button onclick="increaseNumber('textbox1', 'itemval1')">
-                                                        <iconify-icon icon="ic:round-plus"></iconify-icon>
-                                                    </button>
+                                                
+                                                        <a onclick="increaseNumber('textbox1', 'itemval1')" type="button">
+                                                            <iconify-icon icon="ic:round-plus"></iconify-icon>
+                                                        </a>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -156,13 +162,17 @@
                                             <div class="col-4 text-end">
                                                 <iconify-icon class="dust_bin" icon="ri:delete-bin-fill"></iconify-icon>
                                                 <div class="quantity">
-                                                    <button onclick="decreaseNumber('textbox2', 'itemval2')">
-                                                        <iconify-icon icon="ic:baseline-minus"></iconify-icon>
-                                                    </button>
+                                                   
+                                                        <a onclick="decreaseNumber('textbox2', 'itemval2')" type="button">
+                                                            <iconify-icon icon="ic:baseline-minus"></iconify-icon>
+                                                        </a>
+   
                                                     <input type="text" value="0" id="textbox2" name="">
-                                                    <button onclick="increaseNumber('textbox2',  'itemval2')">
-                                                        <iconify-icon icon="ic:round-plus"></iconify-icon>
-                                                    </button>
+                                                    
+                                                        <a onclick="increaseNumber('textbox2',  'itemval2')" type="button">
+                                                            <iconify-icon icon="ic:round-plus"></iconify-icon>
+                                                        </a>
+    
                                                 </div>
                                             </div>
                                         </div>
@@ -194,7 +204,7 @@
                                         <span>Delivery Fee</span>
                                     </div>
                                     <div class="col-6 text-end">
-                                        <p id="shipping_charge">$50</p>
+                                        <p>$<span id="shipping_charge">50.0</span></p>
                                     </div>
                                 </div>
                                 <div class="order_line"></div>

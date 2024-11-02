@@ -429,11 +429,6 @@ margin-top: 25px;
 footer .payments{
     margin-top: 20px;
 }
-button{
-    border: none;
-    outline: none;
-    background: transparent;
-}
 .quantity input{
     width: 40px;
     text-align: center;

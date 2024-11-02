@@ -220,5 +220,8 @@
     footer .line_bottom{
         width: 100%;
     }
+    #products .lines{
+        width: 100%;
+    }
 
 }
